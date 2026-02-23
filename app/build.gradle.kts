@@ -14,10 +14,11 @@ val candidateVersionTag = when {
 val semVerRegex = Regex("^v(\\d+)\\.(\\d+)\\.(\\d+)(?:[-+].*)?$")
 val semVerMatch = candidateVersionTag?.let { semVerRegex.matchEntire(it) }
 val resolvedVersionName = semVerMatch?.let {
+    val matchedTag = it.value
     val major = it.groupValues[1]
     val minor = it.groupValues[2]
     val patch = it.groupValues[3]
-    val suffix = candidateVersionTag.removePrefix("v").removePrefix("$major.$minor.$patch")
+    val suffix = matchedTag.removePrefix("v").removePrefix("$major.$minor.$patch")
     "$major.$minor.$patch$suffix"
 } ?: "1.0"
 val resolvedVersionCode = semVerMatch?.let {
