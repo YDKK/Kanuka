@@ -1,9 +1,7 @@
-# Kanuka App Specification (Current)
+# Kanuka App Specification
 
 ## 1. Scope
-Kanuka is an offline Android speech translation app for Japanese/English/Chinese.
-
-This document reflects the current implementation only.
+Kanuka is an offline Android speech translation app.
 
 - Reinstall is assumed.
 - No backward compatibility or migration behavior is required.

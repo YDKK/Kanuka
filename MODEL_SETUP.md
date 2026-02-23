@@ -1,4 +1,4 @@
-# Kanuka Model Setup (Current)
+# Kanuka Model Setup
 
 Kanuka uses only one model format and one model variant.
 
@@ -6,7 +6,7 @@ Kanuka uses only one model format and one model variant.
 
 Select this file in `Settings > Model File`:
 
-- `gemma-3n-E4B-it-int4.litertlm`
+- [gemma-3n-E4B-it-int4.litertlm](https://huggingface.co/google/gemma-3n-E4B-it-litert-lm/blob/main/gemma-3n-E4B-it-int4.litertlm)
 
 The app validates filename and extension.
 
@@ -24,7 +24,7 @@ The app will auto-preload model/runtime when possible.
 - Both translation engines use the same `.litertlm` file:
   - `Gemma 3n E4B + SpeechRecognizer`
   - `Gemma 3n E4B Direct Audio`
-- Backend execution is LiteRT-LM on `GPU / vision=GPU / audio=CPU` (CPU fallback disabled).
+- Backend execution is LiteRT-LM on `GPU / vision=GPU / audio=CPU`.
 
 ## 4. Direct Audio Tuning
 
